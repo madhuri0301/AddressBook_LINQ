@@ -7,6 +7,10 @@ namespace AddressBook_LINQ
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To The AddressBook Program Using LINQ");
+
+            AddressModel model = new AddressModel();
+            AddressBook_DataTable dataTable = new AddressBook_DataTable();
+            dataTable.CreateTable(model);
         }
     }
 }

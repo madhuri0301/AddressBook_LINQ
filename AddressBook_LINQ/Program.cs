@@ -11,6 +11,7 @@ namespace AddressBook_LINQ
             AddressModel model = new AddressModel();
             AddressBook_DataTable dataTable = new AddressBook_DataTable();
             dataTable.CreateTable(model);
+            dataTable.Display();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace AddressBook_LINQ
             dataTable.CreateTable();
             while (true)
             {
-                Console.WriteLine("Enter Choice \n1.Display \n2.Add Contact \n 3.Edit Contact  \n4.Exit ");
+                Console.WriteLine("Enter Choice \n1.Display \n2.Add Contact \n 3.Edit Contact \n4.Delete Contact \n5.Exit ");
                 int choise = Convert.ToInt32(Console.ReadLine());
                 try
                 {
@@ -53,6 +53,11 @@ namespace AddressBook_LINQ
                             dataTable.EditContact(model);
                             break;
                         case 4:
+                            Console.Write("Enter First Name: ");
+                            model.first_Name = Console.ReadLine();
+                            dataTable.DeleteContact(model);
+                            break;
+                        case 5:
                             Environment.Exit(0);
                             break;
                         default:

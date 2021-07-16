@@ -6,6 +6,7 @@ namespace AddressBook_LINQ
 {
     public class AddressModel
     {
+        //properties
         public string first_Name { get; set; }
         public string last_Name { get; set; }
         public string address { get; set; }
